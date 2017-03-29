@@ -1,7 +1,8 @@
 # Learing-python
 self record to learn python in 2017
 
-##数据类型 & 变量
+数据类型 & 变量
+-----
 数据类型有4种：
 字符串 - 表示一串字符，需要用''或""引起来  (eg. "hello world")
 整数  (eg. 111)
