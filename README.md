@@ -30,3 +30,40 @@ self record to learn python in 2017
       if password == 'cat':
          break
   print('Access granted.')
+
+# 字典与列表
+keys()/values()/items() 命令
+字典中使用下面3个命令，返回字典中的值，但返回的值不是列表，不能被修改。可以用于for循环。
+
+spam = {'color': 'red', 'age':'42'}
+for v in spam.values():
+   print(v)
+   
+#结果返回：
+red
+42
+
+   用in/not in 检查值是否存在于列表中。也可用于检查键/值是否存在于字典中。
+   spam = {'name':'Zophie', 'age':7}
+   'name' in spam.keys()
+   #返回
+   Ture
+   'color' in spam.keys()
+   #返回
+   False
+   'color' not in spam.keys()
+   #返回
+   Ture
+   'color' in spam   #此命令相当于'color' in spam.keys()，是简写
+   #返回
+   False
+   
+   #get()
+   用法：get(keys, 若没找到对应的keys时，要返回的“备用”值)  如: get('cups', 0)
+   
+   #setdefault()
+   setdefault()类似实现如下功能：
+      spam = {'name': 'Pooka', 'age': 5}
+      if 'color' not in spam:
+         spam['color'] = 'black'
+   用法：setdefault(keys,若不存在是keys时返回的值)
